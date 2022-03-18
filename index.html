@@ -1,0 +1,174 @@
+<!doctype html>
+
+<!--
+    
+    This is the impress.js template for generating slides that follows the communication standards of the Netherlands eScience Center.
+    A repository can be found on Github: https://github.com/jiqicn/impress_template_nlesc
+    Author: @jiqicn
+    
+-->
+
+<html lang="en">
+<head>
+    <title>Title of the slides | by AUTHER @NLeSC</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="description" content="The impress.js template for generating slides that follows the communication standards of the Netherlands eScience Center." />
+    <meta name="author" content="Ji Qi" />
+
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,700,200italic,700italic;Assistant:200,700">
+    <link href="css/impress.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+    
+    The core element used by impress.js. Only `id` is important here as that's how the script find it.
+
+    Here are some widely used attributes and the explanations, you can refer to the impress.js project for more attributes and their usage":
+
+    - data-transition-duration: the duration of the transition between slide (in miliseconds).
+    - data-width and data-height: size of the target screen. Note that when presenting a presentation on a screen (or browser window) of different size, impress.js will automatically scale the presentation to fit the screen.
+    - data-min-scale and data-max-scale: the minimum and maximum limits to scaling the presentation to fit the screen.
+    - data-perspective: the css perspective of the webpage
+    - data-autoplay: the timeout expires (in seconds) of automatically advancing to next slide. To stop autoplay, assign -1 to this attribute. Note that this can be set separately in each slide.
+
+-->
+<div id="impress"
+    data-transition-duration="500"
+    
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    data-autoplay="-1">
+
+    <!--
+        
+        Follows are where your slides should be defined.
+        
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
+        the 'camera' shows them on each step of the presentation. 
+
+        In this template, we also have a class called 'slide'. This class is defined in the css file, 
+        and will show your contents as a slide with round-cornered rectangle border and shadow effect.
+
+        In case you want to add notes to the slide, you should add a separate div element 
+        with a class name of 'notes'. When playing your presentation, click on 'P' on your keyboard,
+        and you will have a console of control, which shows the current and next slide, as well as
+        your notes of the current slide, just like most of the PPT software.
+
+        Relevant attributes:
+        - data-x and data-y: the position of the **center** of the element.
+        
+    -->
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <h1>The title of your presentation that is not that long but could be very long in the future</h1>
+        <span class="sub">Sub title of your presentation</span>
+        </br>
+        <span class="author">Author Names</span>
+
+        <div class="notes"></div>
+    </div>
+
+    <div class="step slide" data-x="-1300" data-y="-1500">
+        <h1>List</h1>
+        <div class="contents">
+            <ul>
+                <li>item 1</li>
+                <li>item 2
+                    <ul>
+                        <li>subitem 1</li>
+                        <li>subitem 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <ol>
+                <li>ordered item 1</li>
+                <li>ordered item 2
+                    <ol>
+                        <li>ordered subitem 1</li>
+                        <li>ordered subitem 2</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <div class="notes"></div>
+    </div>
+
+    <div class="step slide" data-x="-300" data-y="-1500">
+        <h1>Table</h1>
+        <div class="contents">
+            <table>
+                <caption>Table caption</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="notes"></div>
+    </div>
+
+    <div class="step slide" data-x="700" data-y="-1500">
+        <h1>Image wall</h1>
+        <div class="contents">
+            <figure>
+                <img src="resources/sample_img.jpg" alt="">
+                <figcaption>Figure caption</figcaption>
+            </figure>
+        </div>
+
+        <div class="notes"></div>
+    </div>
+
+    <div class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p> You can also present your contents directly, for instannce, a link to your work <a href="https://github.com/jiqicn/impress_template_nlesc">Github page of this templage</a>.</p>
+    </div>
+
+    <div id="ing" class="step" data-x="2500" data-y="-850" data-z="0" data-rotate="90" data-scale="6">
+        <p>You can also do <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b>.</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="3200" data-y="1800" data-z="-100" data-rotate-x="-70" data-rotate-y="00" data-scale="2">
+        <p><b>Thank you for watching!</b></p>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="1500" data-z="0" data-scale="10"></div>
+
+</div>
+
+<script src="js/impress.min.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
+
